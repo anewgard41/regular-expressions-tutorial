@@ -1,10 +1,14 @@
-# Title (replace with your title)
+# Regular Expressions (Regex) Tutorial 
 
-Introductory paragraph (replace this with your text)
+Regular Expressions! What are they? How do they work? Why do they exist? These are all questions that will be answered in this tutorial. Regular expressions are a sequence of characters that define a search pattern. They are used to find and replace patterns in a string or file. They are also used to validate input. Regular expressions are used in many programming languages, command line tools, and text editors. Through the use of literal and meta characters, regular expressions can be used to identify text patterns. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The regular expression I will walk through is an regex used to match an email that follows this general structure: `name@domain.com`
+
+Here is a snippet of the regex: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+This regex will match an email address that contains letters, numbers, underscores, periods, and hyphens in the name section. It will also match emails that contain a domain name that contains letters, numbers, underscores, periods, and hyphens. The domain proceeds the @ symbol, a *literal character*. The domain name must also end with a dot a and an official extension, such as .com, .edu, .net, etc. The extension must be between 2 and 6 characters long.
 
 ## Table of Contents
 
@@ -18,6 +22,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
+
+
 
 ### Anchors
 
